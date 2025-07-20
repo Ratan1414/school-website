@@ -1,0 +1,144 @@
+body,h1, h2, h3, h4, h5, h6, p, span, a, li, td, th {
+    font-family: Montserrat;
+    color: black;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+/* slide show css start */
+/* --- core layout --- */
+.slideshow-container {
+ display: grid;      
+    justify-content: center;
+    text-align: center;
+}
+
+.slide { display: none; }
+.slide.show { display: block; }
+
+/* images */
+.slide img { width: 100%; display: block; }
+
+/* dots */
+.dots { text-align: center; margin-top: 0.6rem; }
+.dot {
+  height: 12px; width: 12px; margin: 0 3px;
+  border-radius: 50%; background: #bbb;
+  display: inline-block; cursor: pointer;
+  transition: background-color 0.4s;
+}
+.dot.active { background: #555; }
+
+/* fade‑in animation */
+.fade { animation: fadeIn 1.2s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0.35; } to { opacity: 1; } }
+
+/* responsive tweaks (optional) */
+@media (max-width: 480px) {
+  .dot { height: 10px; width: 10px; }
+}
+/* slide show css end */
+nav.page_nav {
+    
+  top: 0;
+  left: 0;
+  width: 96vw;
+  height: auto; /* adjust as needed */
+  background-color: #ffffff; /* or any color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between logo and links */
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional shadow */
+  z-index: 1000; /* stays on top */
+}
+
+ul.nav_links {
+    padding-left: 0px;
+    padding-right: 30px;
+    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+h1.school_name {
+  
+    font-size: 28px;
+}
+.logo_name {
+  display: flex;
+  align-items: center; /* Vertically centers the text to the image */
+}
+
+.logo_name a {
+  display: flex;
+  align-items: center; /* Apply flex to the link as well */
+  text-decoration: none; /* Optional: remove underline */
+}
+img.school_logo {
+    margin: 5px 0;
+}
+img.children_image {
+    width: 81vw;
+}
+.slide.fade {
+   
+    text-align: center;
+}
+img.children_image {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.slideshow-container {
+    background-color: #A8D052;
+}
+
+
+.cir_main {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* 3 items per row on desktop */
+  justify-content: center; /* center the whole grid */
+  gap: 50px 200px;
+  padding: 20px;
+}
+
+.cir_block {
+  text-align: center;
+}
+
+.cir_block img {
+  width: 100px;
+  height: auto;
+}
+
+.cir_conte {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* For tablets and mobiles: 2 items per row */
+@media (max-width: 768px) {
+  .cir_main {
+    gap: 50px;
+    grid-template-columns: repeat(2, auto); /* 2 items per row */
+  }
+}
+
+.cir_block img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+
+
+.cir_block {
+ 
+ 
+  box-sizing: border-box;
+  text-align: center;
+}

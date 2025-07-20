@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer-left img.school_logo {
+    padding-top: 5px;
+    margin: 0px;
+    padding-left: 1px;
+}
+.footer {
+  background-color: #001652;
+  color: white;
+  padding: 20px 0 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-left {
+  
+  min-width: 200px;
+}
+
+.logo-circle {
+  width: 85px;
+  height: 85px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.school-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #ddd;
+}
+
+.footer-right {
+  display: flex;
+  
+  justify-content: space-around;
+  min-width: 300px;
+  gap: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* ✅ Fix mobile layout under 768px */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  
+}
