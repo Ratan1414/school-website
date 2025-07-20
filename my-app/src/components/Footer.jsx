@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Footer.css';
 import Layer1 from '../assets/Layer_1.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -40,21 +41,21 @@ function Footer() {
         {/* Center + Right Sections */}
         <div className="footer-right">
           <div className="footer-links">
-            <a href="#">About Us</a>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">Events</a>
+            <Link to="/About_us">About Us</Link>
+            <Link to="/Academics">Academics</Link>
+            <Link to="/Admissions">Admissions</Link>
+            <Link to="/Events">Events</Link>
           </div>
           <div className="footer-links">
-            <a href="#">Volunteer</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Donate</a>
+            <Link to="/Volunteer">Volunteer</Link>
+            <Link to="/Contact_us">Contact Us</Link>
+            <Link to="/Donate">Donate</Link>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        © 2023 | Baba Fateh Singh School
+        © 2025 | Baba Fateh Singh School
       </div>
     </footer>
     )

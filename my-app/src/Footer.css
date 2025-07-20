@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+p.school-name {
+    color: white;
+}
 .footer-left img.school_logo {
     padding-top: 5px;
     margin: 0px;
@@ -36,7 +39,7 @@
 .logo-circle {
   width: 85px;
   height: 85px;
-  background-color: #ccc;
+  background-color: white;
   border-radius: 50%;
   margin-bottom: 10px;
 }
